@@ -19,15 +19,15 @@ list_t* insert_sorted(list_t* head, list_t* new_element) {
 	}
 
 	while(1){
-		if(curr->next == NULL){
-			curr->next = new_element;
+		if(current->next == NULL){
+			current->next = new_element;
 			return head;
-		}else if(curr->next->index >= new_element->index){
-			new_element->next = curr->next;
-			curr->next = new_element;
+		}else if(current->next->index >= new_element->index){
+			new_element->next = current->next;
+			current->next = new_element;
 			return head;
 		}
-		curr = curr->next;
+		current = current->next;
 	}
 	return head;   
 }
