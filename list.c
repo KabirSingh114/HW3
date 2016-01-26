@@ -11,7 +11,7 @@ list_t* insert_sorted(list_t* head, list_t* new_element) {
 	assert(head != NULL);
 	assert(new_element != NULL);
 
-	return head;
+	return head;   
 }
 
 // Reverses the order of the list starting at `head` and returns a pointer to
